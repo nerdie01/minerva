@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | SpaceRace</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 570px; height: 760px; background: #231F20"></canvas>
+    <script src="Build/Minerva.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Minerva.data.unityweb",
+        frameworkUrl: "Build/Minerva.framework.js.unityweb",
+        codeUrl: "Build/Minerva.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "SpaceRace",
+        productVersion: "0.1",
+      });
+    </script>
+  </body>
+</html>
