@@ -7,12 +7,12 @@
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" style="width: 570px; height: 760px; background: #231F20"></canvas>
-    <script src="Build/Minerva.loader.js"></script>
+    <script src="Build/Minerva_ES.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Minerva.data.unityweb",
-        frameworkUrl: "Build/Minerva.framework.js.unityweb",
-        codeUrl: "Build/Minerva.wasm.unityweb",
+        dataUrl: "Build/Minerva_ES.data.unityweb",
+        frameworkUrl: "Build/Minerva_ES.framework.js.unityweb",
+        codeUrl: "Build/Minerva_ES.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "SpaceRace",
